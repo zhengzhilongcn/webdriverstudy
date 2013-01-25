@@ -5,6 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * 类名: ShopIndexPage
+ * 函数: TODO ADD FUNCTION
+ * 原因:	 TODO ADD REASON
+ * 作者    Diason  
+ * 时间	 2013-1-25		下午2:02:22 
+ * 描述 :对应Index.jsp 最上面的一个导航
+ */
+
+
 public class TopNavigation {
 	
 	private WebDriver driver = null;
@@ -49,13 +59,15 @@ public class TopNavigation {
 	@FindBy(linkText = "返回首页")
 	private WebElement backIndexPage;
 	
-	
+	//成功登录后在顶部显示的会员名字
+	@FindBy(className = "name")
+	private WebElement vipName;
 	
 	
 	/*
 	 * 实现登录功能,返回一个登录页面
 	 */
-	public LoginPage login(WebDriver driver){
+	public LoginPage clickLogin(WebDriver driver){
 		
 		login.click();
 		return new LoginPage(driver);
@@ -71,8 +83,17 @@ public class TopNavigation {
 		return new RegPage(driver);
 	}
 	
-	
-	
+	/*
+	 * 是否能登录成功
+	 */
+	public boolean isLoginSusseccful(){
+		
+		boolean hasDisplay = vipName.isDisplayed();  //判断成功登录后，用户名有没有显示出来
+		
+		hasDisplay = logOut.isDisplayed();  //判断是否有退出按钮；
+		
+		return hasDisplay ;
+	}
 	
 	
 }

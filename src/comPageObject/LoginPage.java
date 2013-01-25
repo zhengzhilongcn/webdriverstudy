@@ -5,6 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * 类名: ShopIndexPage
+ * 函数: TODO ADD FUNCTION
+ * 原因:	 TODO ADD REASON
+ * 作者    Diason  
+ * 时间	 2013-1-25		下午2:02:22 
+ * 描述 : 登录页面：/Shop/FastRegister.jsp
+ */
+
 public class LoginPage {
 	
 	WebDriver driver = null;
