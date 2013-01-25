@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/htmlunit-2.11.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/htmlunit-core-js-2.11.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/httpclient-4.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/json-20080701.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/selenium-java-2.29.0.jar" sourcepath="D:/java_src/ShopTestProject/libs/selenium-java-2.29.0-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/selenium-server-standalone-2.29.0.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/testng-6.8.jar"/>
+	<classpathentry kind="lib" path="D:/java_src/ShopTestProject/libs/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
