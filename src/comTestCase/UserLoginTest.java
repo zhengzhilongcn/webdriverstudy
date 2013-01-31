@@ -1,6 +1,8 @@
 package comTestCase;
 
 
+import static org.junit.Assert.*;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,7 +34,7 @@ public class UserLoginTest {
 		//System.setProperty("webdriver.chrome.driver", "./lib/chromedriver.exe");在测试服务器run,才需要写该值
 		
 		 driver = new FirefoxDriver();  //打开火狐浏览器
-		
+		 
 	}
 	
 	
@@ -40,8 +42,8 @@ public class UserLoginTest {
 	public void tearDown(){
 		
 		//quit方法可以结束FirefoxDriver.exe进程
-		driver.quit();
-		driver.close(); 
+		
+		//driver.close(); 
 	}
 	
 	@Test
@@ -49,15 +51,13 @@ public class UserLoginTest {
 		
 		ShopIndexPage indexPage = new ShopIndexPage(driver);  //打开index.jsp
 		
+		if(!indexPage.hastopT()) fail("页面导航没有加载，测试失败");
         TopNavigation topT = new TopNavigation(driver); //	初始化导航上面的控件
-        
-        
-        
         LoginPage loginPage = topT.clickLogin(driver);  //点击导航上面的登录连接
+        loginPage.login(" ", " ");
+		boolean isSuccessful = topT.isLoginSusseccful();
 		
-        loginPage.login("admin", "admin888");
-        
-		
+		assertTrue(isSuccessful); //如果成功，就该测试用例通过
 		
 	}
 

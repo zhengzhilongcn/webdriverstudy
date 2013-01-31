@@ -28,7 +28,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class ShopIndexPage {
 	
-	private final static String url = "http://gzrdc.powereasy.net:8003/Index.aspx"; 
+	private final static String url = ""; 
 	
 	WebDriver driver  = null;
 	
@@ -44,8 +44,6 @@ public class ShopIndexPage {
 	
 	
 	
-	
-	
 	/*
 	 * 判断下是否成功打开index.jsp,就判断是否导航显示出来
 	 */
@@ -55,6 +53,7 @@ public class ShopIndexPage {
 		
 		return hasDisplay;
 	}
+	
 	
 }
 
